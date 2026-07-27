@@ -1,0 +1,25 @@
+# Ambiente Python (~1GB) — não versionar
+python/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Segredos
+.env
+**/.env
+
+# Cache / runtime
+*.log
+log.txt
+app/cache_respostas.json
+app/vagas_cache.json
+app/storage/
+
+# Instalador
+*.msi
+
+# Sistema
+.DS_Store
+Thumbs.db
+.streamlit/secrets.toml

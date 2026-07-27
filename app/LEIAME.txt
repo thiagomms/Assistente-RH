@@ -1,0 +1,35 @@
+# Projeto 4 - App de IA Generativa com SLM, RAG e Engenharia de Prompt Para Assistente de RH (Análise de Currículos com IA)
+
+# Para executar a app:
+
+# Abra o terminal ou prompt de comando, navegue até a pasta com os arquivos e execute o comando abaixo para criar um ambiente virtual:
+
+conda create --name dsaragp4 python=3.12
+
+# Ative o ambiente:
+
+conda activate dsaragp4 (ou: source activate dsaragp4)
+
+# Instale o pip e as dependências:
+
+conda install pip
+pip install -r requirements.txt 
+
+# Abra o terminal ou prompt de comando, navegue até a pasta com os arquivos e execute: 
+
+streamlit run dsaprojeto4.py
+
+# Perguntas de exemplo:
+
+# Algum candidato tem Pós-Graduação na Data Science Academy?
+# Quais candidatos possuem conhecimento avançado em Excel?
+# Qual candidato tem experiência profissional na Metalúrgica Ômega?
+
+# Use os comandos abaixo para desativar o ambiente virtual e remover o ambiente (opcional):
+
+conda deactivate
+conda remove --name dsaragp4 --all
+
+
+
+
