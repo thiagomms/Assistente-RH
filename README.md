@@ -1,48 +1,48 @@
 # Assistente RH
 
-Chatbot de an�lise de curr�culos com Intelig�ncia Artificial para apoiar o RH.
+Chatbot de analise de curriculos com Inteligencia Artificial para apoiar o RH.
 
-Em vez de ler cada curr�culo manualmente, o time faz perguntas em linguagem natural � por exemplo: *"Qual candidato tem mais experi�ncia em log�stica?"* � e o sistema responde com base nos documentos indexados.
+Em vez de ler cada curriculo manualmente, o time faz perguntas em linguagem natural — por exemplo: *"Qual candidato tem mais experiencia em logistica?"* — e o sistema responde com base nos documentos indexados.
 
-Os curr�culos de exemplo no reposit�rio s�o **fict�cios**, usados apenas para demonstra��o.
+Os curriculos de exemplo no repositorio sao **ficticios**, usados apenas para demonstracao.
 
 ## O que faz
 
 - Interface web em Streamlit (chat)
-- Indexa��o local de curr�culos (PDF/DOCX) com busca sem�ntica (FAISS + FastEmbed)
+- Indexacao local de curriculos (PDF/DOCX) com busca semantica (FAISS + FastEmbed)
 - Respostas geradas via API Groq (LLM)
 - Cache local de perguntas/respostas
 - Atalhos Windows para abrir o app com um clique
 
 ## Tecnologias
 
-| Tecnologia | Fun��o |
+| Tecnologia | Funcao |
 |------------|--------|
-| Python | Runtime da aplica��o |
+| Python | Runtime da aplicacao |
 | Streamlit | Interface web |
-| LangChain | Orquestra��o do fluxo RAG |
-| FAISS + FastEmbed | Vetores e busca local nos curr�culos |
+| LangChain | Orquestracao do fluxo RAG |
+| FAISS + FastEmbed | Vetores e busca local nos curriculos |
 | Groq API | Modelo de linguagem na nuvem |
 
-## Estrutura do reposit�rio
+## Estrutura do repositorio
 
 ```
 AssistenteRH/
-??? app/                 # C�digo Streamlit e documenta��o
-??? CRIAR_ATALHO.bat     # Cria atalho na �rea de trabalho
-??? criar_atalho.ps1
-??? gerenciar.ps1        # Sobe/abre o app
-??? abrir.vbs
-??? .gitignore           # N�o versiona python/, .env, caches
+|-- app/                 # Codigo Streamlit e documentacao
+|-- CRIAR_ATALHO.bat     # Cria atalho na area de trabalho
+|-- criar_atalho.ps1
+|-- gerenciar.ps1        # Sobe/abre o app
+|-- abrir.vbs
+|-- .gitignore           # Nao versiona python/, .env, caches
 ```
 
-> A pasta `python/` (~1GB) e o arquivo `.env` (chaves de API) **n�o** entram no Git.
+> A pasta `python/` (~1GB) e o arquivo `.env` (chaves de API) **nao** entram no Git.
 
-## Como rodar (vis�o geral)
+## Como rodar (visao geral)
 
-1. Ter o ambiente Python do projeto (pasta `python/` local ou ambiente pr�prio)
-2. Configurar `.env` com a chave da Groq (e demais vari�veis necess�rias)
-3. Usar os curr�culos de demonstra��o (ou adicionar os seus na pasta de documentos do app)
+1. Ter o ambiente Python do projeto (pasta `python/` local ou ambiente proprio)
+2. Configurar `.env` com a chave da Groq (e demais variaveis necessarias)
+3. Usar os curriculos de demonstracao (ou adicionar os seus na pasta de documentos do app)
 4. Iniciar pelo atalho / `gerenciar.ps1` ou:
 
 ```bash
@@ -50,8 +50,8 @@ cd app
 streamlit run dsaprojeto4.py
 ```
 
-Mais detalhes t�cnicos: veja [`app/README.md`](app/README.md).
+Mais detalhes tecnicos: veja [`app/README.md`](app/README.md).
 
-## Licen�a / uso
+## Licenca / uso
 
-Projeto de demonstra��o e apoio ao RH.
+Projeto de demonstracao e apoio ao RH.
